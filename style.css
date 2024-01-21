@@ -1723,8 +1723,13 @@
         width: 60px;
         height: 34px;
       }
-      
-      
+
+      @media (max-width: 768px) {
+        .switch {
+          position: relative; /* Change the position back to relative for smaller screens */
+          margin-top: 10px; /* Add margin to move the toggle down on smaller screens */
+        }
+    }
       .switch input {
         opacity: 0;
         width: 0;
