@@ -764,6 +764,7 @@
   .article-title { margin-bottom: 30px; }
   
   
+  
   /**
    * education and experience 
    */
@@ -825,16 +826,46 @@
     font-weight: var(--fw-300);
     line-height: 1.6;
   }
+
+  .text-content {
+    display: flex;
+    align-items: left;
+  }
   
+  .text-content i {
+    margin-right: 5px;
+  }
+
+  .download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(45, 100%, 72%);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Adjusted padding */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px; /* Adjusted font size */
+  }
+  
+  .download-btn:hover {
+    background-color: #ffdb70; /* Darker shade of yellow on hover */  }
+  
+  .download-btn i {
+    margin-left: 5px;
+  }
   
   /**
    * skills 
    */
-  
-  .skills-title { margin-bottom: 20px; }
+   
+   .skills-title { margin-top: 50px; }
+  .skills-title { margin-bottom: 25px; }
   
   .skills-list { padding: 20px; }
-  
+   
   
   .skills-item:not(:last-child) { margin-bottom: 15px; }
   
@@ -1703,6 +1734,8 @@
   
     article { min-height: 100%; }
 
+    
+
     body {
         transition: background-color 0.5s;
         padding: 20px; /* Add padding to move the content away from the edges */
@@ -1723,8 +1756,13 @@
         width: 60px;
         height: 34px;
       }
-      
-      
+
+      @media (max-width: 768px) {
+        .switch {
+          position: relative; /* Change the position back to relative for smaller screens */
+          margin-top: 10px; /* Add margin to move the toggle down on smaller screens */
+        }
+    }
       .switch input {
         opacity: 0;
         width: 0;
