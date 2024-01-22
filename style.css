@@ -1734,6 +1734,82 @@
     .sidebar, article { width: auto; }
   
     article { min-height: 100%; }
+<<<<<<< HEAD
+=======
+
+    body {
+        transition: background-color 0.5s;
+        padding: 20px; /* Add padding to move the content away from the edges */
+        position: relative; /* Set the body to a relative position */
+        min-height: 100vh; /* Set a minimum height to ensure the toggle stays at the bottom */
+      }
+      
+      .dark-mode {
+        background-color: #363636;
+        color: #fff;
+      }
+      
+      .switch {
+        position: absolute; /* Set the toggle to an absolute position */
+        bottom: 20px; /* Position the toggle 20px from the bottom */
+        right: 20px; /* Position the toggle 20px from the right */
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      @media (max-width: 768px) {
+        .switch {
+          position: relative; /* Change the position back to relative for smaller screens */
+          margin-top: 10px; /* Add margin to move the toggle down on smaller screens */
+        }
+    }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #555; /* Set the background color of the toggle to dark grey */
+        border: 4px solid #ffcc00; /* Add a yellow border */
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 30px; /* Increase the height to touch the top and bottom */
+        width: 30px; /* Increase the width to touch the sides */
+        left: -2px; /* Adjust the left position to touch the border */
+        bottom: -2px; /* Adjust the bottom position to touch the border */
+        background-color: #ffcc00; /* Set the color of the ball inside to yellow */
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%; /* Make the ball round */
+      }
+      
+      input:checked + .slider {
+        background-color: hsl(0, 0%, 100%);
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+      .slider.round {
+        border-radius: 35px;
+      }
+>>>>>>> d9ea8c4b1ad2ea3ed3d4ebf2f21c07853da12220
       
   
     /**
