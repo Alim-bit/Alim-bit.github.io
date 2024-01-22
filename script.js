@@ -14,12 +14,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
-// Dark Mode or Light mode
-function toggleMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  }  
-
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
