@@ -885,24 +885,30 @@
     border: none;
     max-width: 36%;
     max-height: 36%;
-    /* border-radius: 5px; */
-    padding: 5px 5px; /* Adjusted padding */
+    padding: 5px; /* Adjusted padding */
     aspect-ratio: 1;
     border-radius: 30%;
     cursor: pointer;
     margin-top: 5px;
     transition: background-color 0.3s;
-
-    /* margin-top: 5px; */
-    margin-left: 10px;
+    margin-left: 8px;
   }
   
   .download-btn:hover {
-    background: #ffffffed; /* Darker shade of yellow on hover */ 
-   }
+    background: #ffffffed; /* Darker shade of yellow on hover */
+  }
   
   .download-btn i {
     margin-left: 5px;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .download-btn {
+      max-width: 34px; /* Adjust the size for mobile devices */
+      max-height: 34px; /* Adjust the size for mobile devices */
+      border-radius: 5px; /* Add back the border-radius */
+    }
   }
   
   
