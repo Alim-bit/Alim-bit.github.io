@@ -763,7 +763,10 @@
   
   .article-title { margin-bottom: 30px; }
   
-  
+  .resume_header{
+    display: flex;
+  }
+ 
   
   /**
    * education and experience 
@@ -878,19 +881,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(45, 100%, 72%);
     color: black;
     border: none;
-    border-radius: 5px;
-    padding: 5px 10px; /* Adjusted padding */
+    max-width: 36%;
+    max-height: 36%;
+    /* border-radius: 5px; */
+    padding: 5px 5px; /* Adjusted padding */
+    aspect-ratio: 1;
+    border-radius: 30%;
     cursor: pointer;
+    margin-top: 5px;
     transition: background-color 0.3s;
-    font-size: 14px; /* Adjusted font size */
-    margin-top: 30px;
+  
+
+    /* margin-top: 5px; */
+    margin-left: 10px;
   }
   
   .download-btn:hover {
-    background-color: #ffdb70; /* Darker shade of yellow on hover */  }
+    background: #ffffffed; /* Darker shade of yellow on hover */ 
+   }
   
   .download-btn i {
     margin-left: 5px;
