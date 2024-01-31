@@ -883,8 +883,8 @@
     justify-content: center;
     color: black;
     border: none;
-    max-width: 36%;
-    max-height: 36%;
+    max-width: 36px;
+    max-height: 36px;
     padding: 5px; /* Adjusted padding */
     aspect-ratio: 1;
     border-radius: 30%;
