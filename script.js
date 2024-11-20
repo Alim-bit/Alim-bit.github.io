@@ -14,11 +14,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
 
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
@@ -92,6 +87,8 @@ const filterFunc = function (selectedValue) {
 
 }
 
+
+
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
 
@@ -136,22 +133,28 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+// Add event to all nav links
+navigationLinks.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    
+    // Get the target section's ID from the href attribute
+    const targetId = this.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+    
+    // Smooth scroll to the target section
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth"
+      });
     }
 
+    // Remove "active" class from all links
+    navigationLinks.forEach((link) => link.classList.remove("active"));
+
+    // Add "active" class to the clicked link
+    this.classList.add("active");
   });
-}
+});

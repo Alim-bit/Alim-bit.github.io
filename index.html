@@ -25,6 +25,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+
+  <figure class="avatar-box">
+    <img src="Alim.png" alt="Alim Dhuka">
+    
+  </figure>
+
+  
+
+  <header class="horizontal-sidebar">
+    <div class="sidebar-info">
+  
+      
+  
+      <div class="info-content">
+        <h1 class="name" title="Alim Dhuka">ALIM   DHUKA</h1>
+      </div>
+
+      <div class="my_status">
+        <p class="title">Student At University Of Waterloo</p>
+      </div>
+  
+      
+    </div>
+  </header>
 </head>
 
 <body>
@@ -38,113 +62,7 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="AlIm_Avatar-removebg-preview.png" alt="Alim Dhuka" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Alim Dhuka">ALIM DHUKA</h1>
-
-          <p class="title">Student At University Of Waterloo</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:alim1.dhuka@gmail.com" class="contact-link">alim1.dhuka@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+15483983130" class="contact-link">+1 (548) 398 3130</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="04-01-2005">Jan 4th , 2005</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Waterloo, Ontario , Canada</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/alim-dhuka-664b47214" class="social-link" >
-                <ion-icon name="logo-linkedin" size=large><p>Linkedin</p><link rel="linkedinpage"href=""></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/Alim-bit" class="social-link" target="_blank">
-                <ion-icon name="logo-github" size="large"></ion-icon>
-            </a>
-        </li>        
-
-        </ul>
-
-      </div>
-
-    </aside>
+    
 
 
 
@@ -156,350 +74,111 @@
 
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- Navbar -->
       <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
+        <ul>
+          <li><a href="#about" data-nav-link>About</a></li>
+          <li><a href="#resume" data-nav-link>Experience</a></li>
+          <li><a href="#portfolio" data-nav-link>Portfolio</a></li>
         </ul>
-
       </nav>
+    
+      <!-- Main Container -->
+      <div class="content-container">
+    
+        <!-- About Block -->
+        <div id="about" class="content-block" data-page="about">
+          <div class="header">
+            <h2 class="h2 article-title">About me</h2>
+          </div>
+    
+          <div class="about-text">
+            <p>
+              As a student at the University of Waterloo, I am pursuing a Bachelor of Mathematics and Computer Science, driven by my passion for problem-solving and innovation. I am eager to apply my skills and knowledge to tackle complex challenges and contribute to groundbreaking advancements in the fields of mathematics and computer science.
+            </p>
+    
+            <p>
+              I am particularly interested in exploring the intersections of artificial intelligence, data analysis, and algorithmic problem-solving, and I have gained expertise in machine learning, deep learning, and C/C++ through my studies and certifications. I have also demonstrated my abilities and potential through my internships at Mindler and High School Moms, where I worked on various projects involving physics, chemistry, and COVID-19 research. Additionally, I am keen to further enhance my critical thinking, teamwork, and leadership abilities, allowing me to excel in collaborative projects and inspire innovative solutions. With a strong determination to make a meaningful impact in the world, I am committed to continuously expanding my skills and knowledge while embracing new opportunities for growth and learning.
+            </p>
+          </div>
+        </div>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            As a student at the University of Waterloo, 
-            I am pursuing a Bachelor of Mathematics and Computer Science, 
-            driven by my passion for problem-solving and innovation. 
-            I am eager to apply my skills and knowledge to tackle complex challenges and 
-            contribute to groundbreaking advancements in the fields of mathematics and computer science. 
-          </p>
-
-          <p>
-            I am particularly interested in exploring the intersections of artificial intelligence, data analysis, and algorithmic problem-solving, 
-            and I have gained expertise in machine learning, deep learning, and C/C++ through my studies and certifications. 
-            I have also demonstrated my abilities and potential through my internships at Mindler and High School Moms, 
-            where I worked on various projects involving physics, chemistry, and COVID-19 research. Additionally, 
-            I am keen to further enhance my critical thinking, teamwork, and leadership abilities, allowing me to excel in collaborative projects and inspire innovative solutions. 
-            With a strong determination to make a meaningful impact in the world, 
-            I am committed to continuously expanding my skills and knowledge 
-            while embracing new opportunities for growth and learning.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="University_of_Waterloo_seal.svg.png" 
-                alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Bachelor of Honours Mathematics(Co-op)</h4>
-
-                <p class="service-item-text">
-                  Currently enrolled in 2A. Actively Seeking 2024 Fall Co-op Opportunities in Software Developer, Data Science, Data analysis and Information Technology.
-                </p>
-              </div>
-
-            </li>
-
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="Movina_Avatar.webp" alt="Movina Dhuka" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Movina Dhuka</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <time datetime="2021-06-14">August 19th, 1999</time>
-                  <p>
-                    I've been his mentor since his mischievous childhood, witnessing his remarkable transformation into a diligent young man. As a sister I’ve seen him grow intellectually both academically and socially. Alim possesses a natural talent for problem-solving and thrives on challenges. His robust grasp of mathematics, combined with a creative mindset, enables him to approach problems uniquely.
-                    I confidently recommend Alim Dhuka, knowing that his fusion of analytical prowess and creativity will make him an invaluable asset in any pursuit..
+          <div id="service" class="content-block">
+            <h3 class="h3 service-title">What I'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="University_of_Waterloo_seal.svg.png" alt="design icon" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Bachelor of Honours Mathematics (Co-op)</h4>
+                  <p class="service-item-text">
+                    Currently enrolled in 2A. Actively Seeking 2024 Fall Co-op Opportunities in Software Developer, Data Science, Data Analysis, and Information Technology.
                   </p>
                 </div>
+              </li>
+            </ul>
+          </div>
 
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="AliZAin Avatar.webp" alt="Alizain Charolia" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Alizain Charolia</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <time datetime="2021-06-14">Dec 24th, 2002</time>
-                  <p>
-                    I've closely followed Alim's journey and can confidently vouch for his exceptional technical expertise. 
-                    Alim's remarkable problem-solving skills and innovative mindset, evident in his various projects, 
-                    have left a lasting impression on me. Despite not being a direct participant, my observation of his work and 
-                    dedication leads me to wholeheartedly endorse Alim for any role that demands a forward-thinking and skilled 
-                    technologist. His commitment to excellence is unmistakable, making him a standout individual in the tech industry.
-                  </p>
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            
-
-            <!----
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Faiz Karediya</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <time datetime="2021-06-14">July 19th, 1999</time>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-        <div class="overlay" data-overlay></div>
-        <section class="testimonials-modal">
-             <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-             </button>
-             <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="Movina_Avatar.webp" alt="Movina Dhuka" width="80" data-modal-img>
-              </figure>
-             </div>
-             <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Movina Dhuka</h4>
-             <div data-modal-text>
-              </div>
-             </div>
-        </section>
-       
-    </div>
-
-
-        
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <div class="resume_header">
-            <h2 class="h2 article-title"> Resume </h2>
+    
+        <!-- Resume Block -->
+        <div id="resume" class="content-block" data-page="resume">
+          <div class="header resume_header">
+            <h2 class="h2 article-title">Experience</h2>
             <a href="Alim_Dhuka_RESUME_12.pdf" target="_blank">
-              <!-- <button type="button" class="btn download-btn px-4">
-                  DOWNLOAD
-              </button> --> 
-              <img class="download-btn px-1" src="download-2-256.gif" alt="download button">
-          </a>
-
+              <img class="download-btn" src="download-2-256.gif" alt="download button">
+            </a>
           </div>
-            
-            
-          </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University Of Waterloo</h4>
-
-              <span>2023 — 2028</span>
-
-              <p class="timeline-text">
-                Bachelors of Honours Mathematics (Co-op)
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">St John's Universal School</h4>
-
-              <span>2021 — 2023</span>
-
-              <p class="timeline-text">
-                High School Diploma (ISC)
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Student Research Intern - Mindler</h4>
-
-              <span>Nov 2023 — Dec 2023</span>
-
-              <p class="timeline-text">
-                -> Conducted in-depth research on current affairs.
-                -> Participated in a self-development master class.
-                -> Integrated current affairs and self-development for a well-rounded understanding
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Research Assistant Intern - HSM</h4>
-
-              <span>Dec 2022 — Jan 2023</span>
-
-              <p class="timeline-text">
-                A 15-day STEM physical and chemical internship program organised by High School Moms. I
-                was able to pass both phases of the internship—Round 1's quiz round and Round 2's research
-                and essay—finishing in the top 200 candidates from India.
-                Had the opportunity to attend lectures from Trinity College Dublin in Ireland, where professors
-                gave three amazing, in-depth presentations on cutting-edge physics and chemistry topics,
-                including X-rays, Synchrotron radiation, and some fascinating chemistry.
-                Conducted research and wrote a 500-word essay on how three scientific discoveries and fields
-                of study in physics and chemistry contributed to the COVID-19 pandemic and how they may
-                assist combat potential pandemics in the future. Overall, it was a wonderful experience working
-                with High School Moms.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-        
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="80">80%</data>
+    
+          <div class="timeline experience">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
               </div>
+              <h3 class="h3"></h3>
+            </div>
+          
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Student Research Intern - Mindler</h4>
+                <span>Nov 2023 — Dec 2023</span>
+                <p class="timeline-text">Conducted in-depth research on current affairs, gathered and analyzed data, and presented findings to the team.</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Student Research Intern - Mindler</h4>
+                <span>Nov 2023 — Dec 2023</span>
+                <p class="timeline-text">Worked on detailed analysis and research for improving engagement in online learning content.</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Student Research Intern - Mindler</h4>
+                <span>Nov 2023 — Dec 2023</span>
+                <p class="timeline-text">Developed and contributed to multiple projects aimed at enhancing mental health resources for students.</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Student Research Intern - Mindler</h4>
+                <span>Nov 2023 — Dec 2023</span>
+                <p class="timeline-text">Assisted in gathering insights from various online communities for better research practices.</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Research Assistant Intern - HSM</h4>
+                <span>Dec 2022 — Jan 2023</span>
+                <p class="timeline-text">
+                  Participated in a 15-day STEM internship organized by High School Moms, which involved in-depth research and experiments on physics and chemistry.
+                </p>
+              </li>
+            </ol>
+          </div>          
+          
+    
+          <div id="skill" class="content-block">
+            <h3 class="h3 skills-title">My Skills</h3>
+            <ul class="skills-list content-card">
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
+              <li class="skills-item">
+  
                 <div class="title-wrapper">
-                  <h5 class="h5">Data Structures and Algorithems</h5>
-                  <data value="80">75%</data>
+                  <h5 class="h5">Java</h5>
+                  <data value="80">80%</data>
                 </div>
   
                 <div class="skill-progress-bg">
@@ -507,246 +186,211 @@
                 </div>
   
               </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Racket</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">C/C++</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
+  
+              <li class="skills-item">
+  
+                  <div class="title-wrapper">
+                    <h5 class="h5">Data Structures and Algorithems</h5>
+                    <data value="80">75%</data>
+                  </div>
+    
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 80%;"></div>
+                  </div>
+    
+                </li>
+  
+              <li class="skills-item">
+  
                 <div class="title-wrapper">
-                  <h5 class="h5">Web Development (HTML, CSS, JAVASCRIPT)</h5>
+                  <h5 class="h5">Python</h5>
                   <data value="70">70%</data>
                 </div>
   
                 <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 50%;"></div>
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
                 </div>
   
               </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Ms Office (Execl,word,Powerpoint)</h5>
-                <data value="95">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-      
-
-        </section>
-
-      </article>
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Racket</h5>
+                  <data value="90">90%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+  
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">C/C++</h5>
+                  <data value="90">90%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+  
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+  
+              <li class="skills-item">
+  
+                  <div class="title-wrapper">
+                    <h5 class="h5">Web Development (HTML, CSS, JAVASCRIPT)</h5>
+                    <data value="70">70%</data>
+                  </div>
+    
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 50%;"></div>
+                  </div>
+    
+                </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Ms Office (Execl,word,Powerpoint)</h5>
+                  <data value="95">95%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+  
               </li>
-
+  
             </ul>
-
+        </div>
+        
+        </div>
+    
+        <!-- Portfolio Block -->
+        <div id="portfolio" class="content-block" data-page="portfolio">
+          <div class="header">
+            <h2 class="h2 article-title">Portfolio</h2>
           </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="Scratch-logo.png" alt="Dodge Ball" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dodge Ball - Scratch</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img href="https://github.com/Alim-bit/Alim-bit.github.io" src="WebDev.jpg" alt="Portfolio" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Portfolio Website</h3>
-
-                <p class="project-category">Web design</p> 
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="Scratch-logo.png" alt="SpaceshipRider" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Spaceship Rider</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
+        
+          <div class="projects">
+            <ul class="project-list">
+              <li class="project-item active" data-category="applications">
                 <a href="#">
-  
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-  
+                    <img src="Scratch-logo.png" alt="Dodge Ball" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Dodge Ball - Scratch</h3>
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+              <li class="project-item active" data-category="web design">
+                <a href="#">
+                  <figure class="project-img">
+                    <img src="WebDev.jpg" alt="Portfolio Website" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Portfolio Website</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+              <li class="project-item active" data-category="applications">
+                <a href="#">
+                  <figure class="project-img">
                     <img src="java-logo1.png" alt="Shopping Mall" loading="lazy">
                   </figure>
-  
                   <h3 class="project-title">Shopping Mall</h3>
                   <p class="project-category">Applications</p>
-  
                 </a>
               </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
+              <li class="project-item active" data-category="web design">
                 <a href="#">
-  
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-  
                     <img src="Python_logo.png" alt="Alarm Clock" loading="lazy">
                   </figure>
-  
                   <h3 class="project-title">Alarm Clock</h3>
                   <p class="project-category">Web design</p>
-  
                 </a>
-            </li>
-
-
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      
+    
+      <!-- Contact Block -->
+      <div id="contact" class="content-block">
+  
+        <ul class="contacts-list">
+          <!-- Contact Title -->
+          <li class="contact-item title">
+            
+            <p class="contact-header">Contact</p>
+            
+          </li>
+      
+          <!-- Avatar, Vertical Line, and Contact Details -->
+          <li class="contact-item details">
+            <!-- Avatar Section -->
+            <figure class="avatar-box-contact">
+              <img src="Alim_contact.png" alt="Alim Dhuka">
+            </figure>
+      
+            <!-- Vertical Line -->
+            <div class="vertical-line"></div>
+      
+            <!-- Contact Information Section -->
+            <div class="contacts-container">
+              <ul class="contacts-list">
+                <li class="contact-item">
+                  <div class="icon-box">
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </div>
+                  <div class="contact-info">
+                    <p class="contact-title">Email:</p>
+                    <a href="mailto:alim1.dhuka@gmail.com" class="contact-link">alim1.dhuka@gmail.com</a>
+                  </div>
+                </li>
+                <li class="contact-item">
+                  <div class="icon-box">
+                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                  </div>
+                  <div class="contact-info">
+                    <p class="contact-title">Phone:</p>
+                    <a href="tel:+15483983130" class="contact-link">+1 (548) 398 3130</a>
+                  </div>
+                </li>
+                <li class="contact-item">
+                  <div class="icon-box">
+                    <ion-icon name="location-outline"></ion-icon>
+                  </div>
+                  <div class="contact-info">
+                    <p class="contact-title">Location:</p>
+                    <address>Waterloo, Ontario, Canada</address>
+                  </div>
+                </li>
+              </ul>    
+      
+              <!-- Social Media Links -->
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="https://www.linkedin.com/in/alim-dhuka-664b47214" class="social-link">
+                    <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="https://github.com/Alim-bit" class="social-link" target="_blank">
+                    <ion-icon name="logo-github" size="large"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
 
 
 
