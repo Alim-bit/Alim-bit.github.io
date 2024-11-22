@@ -787,31 +787,31 @@ body {
   }
 
 
-  /* For other devices */
+  /* For other devices 
 
   @media (max-width: 768px) {
-    /* Reduce margin and padding on mobile devices */
+    /* Reduce margin and padding on mobile devices 
     main {
         margin: 10px 8px;
     }
 
-    /* Adjust horizontal sidebar for mobile view */
+    /* Adjust horizontal sidebar for mobile view 
     .horizontal-sidebar {
         padding: 20px 15px;
     }
 
-    /* Project Items */
+    /* Project Items 
     .project-item {
         width: calc(50% - 15px);
     }
 
-    /* Adjust contact avatar size */
+    /* Adjust contact avatar size 
     .avatar-box-contact img {
         width: 80px;
         height: 80px;
     }
 
-    /* Skills Section */
+    /* Skills Section 
     .skills-table td {
         padding: 5px;
     }
@@ -832,7 +832,7 @@ body {
         margin-bottom: 15px;
     }
 
-    /* Adjust timeline items */
+    /* Adjust timeline items 
     .timeline .title-wrapper {
         margin-left: 10px;
     }
@@ -854,7 +854,7 @@ body {
         height: calc(100% + 20px);
     }
 
-    /* Contact Information Section */
+    /* Contact Information Section 
     .contacts-list {
         margin-left: 20px;
     }
@@ -868,20 +868,20 @@ body {
     }
 }
 
-/* Further adjustments for extra small devices (max-width: 480px) */
+/* Further adjustments for extra small devices (max-width: 480px) 
 @media (max-width: 480px) {
     .horizontal-sidebar, .navbar, .content-container, .content-block {
         width: 95%;
         padding: 15px;
     }
 
-    /* Project Items Stack */
+    /* Project Items Stack 
     .project-item {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    /* Skills Section */
+    /* Skills Section 
     .skills-title {
         font-size: var(--fs-3);
     }
@@ -892,12 +892,12 @@ body {
 
     
 
-    /* Adjust skill item progress */
+    /* Adjust skill item progress 
     .skill-progress-fill {
         background: var(--orange-yellow-crayola);
     }
 
-    /* Contact Info */
+    /* Contact Info 
     .contact-info {
         font-size: var(--fs-4);
     }
@@ -907,3 +907,4 @@ body {
         height: 40px;
     }
 }
+  */
