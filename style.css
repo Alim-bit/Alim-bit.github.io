@@ -795,23 +795,6 @@ body {
         margin: 10px 8px;
     }
 
-    .avatar-box, .horizontal-sidebar, .navbar, .content-container, .content-block {
-        width: 90%;
-        margin: 10px auto;
-        padding: 20px;
-    }
-
-    /* Adjust avatar size on smaller screens */
-    .avatar-box {
-        width: 150px;
-        height: 150px;
-    }
-
-    .avatar-box img {
-        width: 100%;
-        height: auto;
-    }
-
     /* Adjust horizontal sidebar for mobile view */
     .horizontal-sidebar {
         padding: 20px 15px;
@@ -824,8 +807,8 @@ body {
 
     /* Adjust contact avatar size */
     .avatar-box-contact img {
-        width: 180px;
-        height: 180px;
+        width: 80px;
+        height: 80px;
     }
 
     /* Skills Section */
@@ -907,11 +890,7 @@ body {
         height: 4px;
     }
 
-    /* Avatar Section */
-    .avatar-box {
-        width: 10px;
-        height: 10px;
-    }
+    
 
     /* Adjust skill item progress */
     .skill-progress-fill {
@@ -924,7 +903,7 @@ body {
     }
 
     .avatar-box-contact img {
-        width: 140px;
-        height: 140px;
+        width: 40px;
+        height: 40px;
     }
 }
