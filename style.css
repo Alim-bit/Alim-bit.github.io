@@ -138,6 +138,8 @@
   
   body { 
     background: var(--smoky-black); 
+    min-width: 1280px;
+
 }
 
  
