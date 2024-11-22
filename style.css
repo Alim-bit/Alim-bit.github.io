@@ -559,6 +559,31 @@ body {
     margin-top: 30px;
 }
 
+.skills-table {
+  width: 100%;
+  table-layout: fixed;
+}
+.skills-table td {
+  vertical-align: top;
+  padding: 10px;
+}
+.skill-progress-bg {
+  width: 100%;
+  
+  margin-top: 5px;
+  background-color: var(--jet);
+  height: 8px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  background: var(--text-gradient-yellow);
+  border-radius: 5px;
+  
+}
+
 .skills-title {
     font-size: var(--fs-1);
     color: var(--white-1);
@@ -569,6 +594,7 @@ body {
 .skills-list {
     list-style: none;
     padding: 0;
+    align-items: center;
 }
 
 .skills-item {
@@ -582,19 +608,6 @@ body {
     margin-bottom: 5px;
     font-size: var(--fs-4);
     color: var(--white-1);
-}
-
-.skill-progress-bg {
-    background-color: var(--jet);
-    height: 8px;
-    border-radius: 5px;
-    position: relative;
-}
-
-.skill-progress-fill {
-    height: 100%;
-    background: var(--text-gradient-yellow);
-    border-radius: 5px;
 }
 
   
@@ -627,6 +640,8 @@ body {
 .filter-item button:hover {
     color: var(--orange-yellow-crayola);
 }
+
+
 
 .project-list {
     display: flex;
@@ -770,3 +785,146 @@ body {
   .contact-title {
     font-size: var(--fs-1);
   }
+
+
+  /* For other devices */
+
+  @media (max-width: 768px) {
+    /* Reduce margin and padding on mobile devices */
+    main {
+        margin: 10px 8px;
+    }
+
+    .avatar-box, .horizontal-sidebar, .navbar, .content-container, .content-block {
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    /* Adjust avatar size on smaller screens */
+    .avatar-box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .avatar-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust horizontal sidebar for mobile view */
+    .horizontal-sidebar {
+        padding: 20px 15px;
+    }
+
+    /* Project Items */
+    .project-item {
+        width: calc(50% - 15px);
+    }
+
+    /* Adjust contact avatar size */
+    .avatar-box-contact img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Skills Section */
+    .skills-table td {
+        padding: 5px;
+    }
+
+    .skill-progress-bg {
+        height: 6px;
+    }
+
+    .skills-title {
+        font-size: var(--fs-2);
+    }
+
+    .project-img img {
+        height: 150px;
+    }
+
+    .skills-item {
+        margin-bottom: 15px;
+    }
+
+    /* Adjust timeline items */
+    .timeline .title-wrapper {
+        margin-left: 10px;
+    }
+
+    .timeline-list {
+        margin-left: 10px;
+        padding-left: 40px;
+    }
+
+    .timeline-item::after {
+        top: 3px;
+        left: -33px;
+        height: 8px;
+        width: 8px;
+    }
+
+    .timeline-item:not(:last-child)::before {
+        left: -30px;
+        height: calc(100% + 20px);
+    }
+
+    /* Contact Information Section */
+    .contacts-list {
+        margin-left: 20px;
+    }
+
+    .social-list {
+        margin-left: 20px;
+    }
+
+    .vertical-line {
+        height: 200px;
+    }
+}
+
+/* Further adjustments for extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .horizontal-sidebar, .navbar, .content-container, .content-block {
+        width: 95%;
+        padding: 15px;
+    }
+
+    /* Project Items Stack */
+    .project-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Skills Section */
+    .skills-title {
+        font-size: var(--fs-3);
+    }
+
+    .skill-progress-bg {
+        height: 4px;
+    }
+
+    /* Avatar Section */
+    .avatar-box {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* Adjust skill item progress */
+    .skill-progress-fill {
+        background: var(--orange-yellow-crayola);
+    }
+
+    /* Contact Info */
+    .contact-info {
+        font-size: var(--fs-4);
+    }
+
+    .avatar-box-contact img {
+        width: 140px;
+        height: 140px;
+    }
+}
