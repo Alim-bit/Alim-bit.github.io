@@ -239,36 +239,6 @@
     #NAVBAR
 \*-----------------------------------*/
 
-/* Animation Keyframes */
-@property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-@keyframes rotate-border {
-    0% {
-        --angle: 0deg;
-    }
-    100% {
-        --angle: 360deg;
-    }
-}
-
-/* Animated Border Container 
-.animated-border {
-    width: 82%; 
-    max-width: 1240px; 
-    margin: 0 auto;
-    position: relative;
-    border-radius: 25px; 
-    padding: 5px; 
-    background: conic-gradient(from var(--angle), purple, magenta);
-    animation: rotate-border 5s linear infinite; 
-    z-index: 4; 
-}
-*/
-
 .navbar {
     width: 80%; /* Match width with the sidebar for consistency */
     max-width: 1200px; /* Limit the size on larger screens */
@@ -288,7 +258,8 @@
     padding: 0;
     list-style: none; /* Remove default list styling */
     margin: 0;
-    gap: 30px; /* Spacing between each nav item */
+    gap: 70px; /* Spacing between each nav item */
+    padding-left: 30px;
   }
   
   .navbar ul li {
